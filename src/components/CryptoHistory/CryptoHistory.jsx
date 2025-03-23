@@ -1,5 +1,5 @@
 import style from './CryptoHistory.module.css';
-import { format } from 'date-fns';
+import { formatDate } from '../../helpers/formatDate';
 
 const CryptoHistory = ({ items }) => {
   return (
@@ -19,7 +19,7 @@ const CryptoHistory = ({ items }) => {
             <td className={style.td}>{index + 1}</td>
             <td className={style.td}>{price}</td>
             <td className={style.td}>{amount}</td>
-            <td className={style.td}>{format(new Date({ date }), 'Pp')}</td>
+            <td className={style.td}>{formatDate(date)}</td>
           </tr>
         ))}
       </tbody>
