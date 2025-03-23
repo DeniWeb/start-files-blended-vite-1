@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "git-push": "git pull && read -p \"Enter commit message: \" msg && git add . && git commit -m \"$msg\" && git push"
   },
   "dependencies": {
     "clsx": "^2.1.0",
