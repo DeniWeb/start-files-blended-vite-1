@@ -1,7 +1,7 @@
 import ForbesListItem from '../ForbesListItem/ForbesListItem';
 import style from './ForbesList.module.css';
 
-const ForbesList = list => {
+const ForbesList = ({ list }) => {
   return (
     <div className={style.board}>
       <div className={style.header}>

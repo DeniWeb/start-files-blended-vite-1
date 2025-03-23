@@ -10,7 +10,7 @@ const ForbesListItem = ({ name, capital, avatar, isIncrease }) => {
       <h3 className={style.title}>{name}</h3>
       <span className={style.capital}>
         {capital} <BiDollarCircle color="#2196f3" size={22} />
-        {(isIncrease && <FcBullish />) || <FcBearish />}
+        {isIncrease ? <FcBullish /> : <FcBearish />}
       </span>
     </>
   );
